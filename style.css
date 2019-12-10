@@ -11,6 +11,7 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* utilities */
@@ -86,6 +87,7 @@ input {
     padding: 0.8rem 0.5rem;
     border-radius: 8px;
     margin: 0.5rem;
+    cursor: pointer;
 }
 
 input:focus {
@@ -108,7 +110,6 @@ input:focus {
     grid-template-areas: 
     'meal calorie'
     ;
-
 }
 #card .meal {
     grid-area: meal;
@@ -146,5 +147,28 @@ input:focus {
 @media (max-width: 700px) {
     #items ul li {
         padding: 0 5rem;
+    }
+}
+
+
+@media (max-width: 370px) {
+    #card .input-card {
+        display: inline-block;
+    }
+    input {
+        width: 100%;
+        margin: 0.6rem 0;
+    }
+    #card h1 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        padding: 0.6rem 0.4rem;
+    }
+    .input-card {
+        margin: 1rem 0;
+    }
+    #items ul li {
+        padding: 0 0.8rem;
     }
 }
