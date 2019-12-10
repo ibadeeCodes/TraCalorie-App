@@ -1,0 +1,150 @@
+:root {
+    --primary: #165f65;
+    --secondary: #9c99aa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+/* utilities */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: white;
+    background-color: var(--primary);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0.7rem 0.5rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid;
+}
+.btn:hover {
+    padding: 0.7rem 1rem;
+    background: white;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.py-1 {padding: 1rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
+.py-4 {padding: 4rem 0;}
+
+.my-1 {margin: 1rem 0;}
+.my-2 {margin: 2rem 0;}
+.my-3 {margin: 3rem 0;}
+.my-4 {margin: 4rem 0;}
+
+.btn-secondary {
+    background: #FFC107;
+}
+
+h1,h2,h3 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.2rem;
+    color: var(--primary);
+}
+
+.center {
+    text-align: center;
+}
+
+#header {
+    padding: 1rem 0;
+}
+#header h1{
+    text-align: center;
+    color: var(--primary);
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+input {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    border: 0.5px solid #ccc;
+    padding: 0.8rem 0.5rem;
+    border-radius: 8px;
+    margin: 0.5rem;
+}
+
+input:focus {
+    outline: none;
+    transition: all 0.5 ease;
+}
+
+#card {
+    padding: 1.2rem 0;
+}
+
+#card .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#card .input-card {
+    display: grid;
+    grid-template-areas: 
+    'meal calorie'
+    ;
+
+}
+#card .meal {
+    grid-area: meal;
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+}
+#card .calorie{
+    grid-area: calorie;
+}
+
+#card h1 {
+    font-size: 2rem;
+}
+
+#items ul li {
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+/* .divider {
+    margin: 1rem auto;
+    background: #d8dacc;
+    height: 0.5px;
+    width: 80%; 
+} */
+
+.CaloriesTotal {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    #items ul li {
+        padding: 0 5rem;
+    }
+}

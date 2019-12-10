@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Red+Hat+Display&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" 
+    crossorigin="anonymous">
+
+    <title>Tracalorie App</title>
+</head>
+<body>
+    <nav id="header">
+        <div class="container">
+            <h1>Tracalorie App</h1>
+            <a href="" class="btn" id="clearAll">Clear All &nbsp;<i class="far fa-trash-alt"></i></a>
+        </div>
+    </nav>
+    <section id="card">
+        <div class="container">
+            <h2>Add Meal / Food Item 👍</h2>
+            <div class="input-card">
+                <input type="text" class="meal" placeholder="Enter Meal">
+                <input type="number" class="calorie" placeholder="Enter Calories">
+            </div>
+            <div class="buttons py-1">
+                <div class="buttons-left">                       
+                    <a href="" class="btn btn-secondary" id="addItem">Add Meal <span>🍔</span></a>
+                    <a href="" class="btn btn-secondary" id="updItem">Update Meal 🖊️</a>
+                    <a href="" class="btn btn-secondary" id="delItem">Delete Meal ❌</a>
+                </div>
+                <div class="buttons-right">
+                    <a href="" class="btn btn-secondary" id="back">Back <span>&#8592;</span></a>
+                </div>
+            </div>
+            <h1 class="center my-2">Total Calories InTake : <span class="CaloriesTotal">0</span> </h1>
+        </div>
+    </section>
+    <section id="items">
+        <div class="container">
+            <ul class="itemslist">
+                <!-- <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li>
+                <li>Hello <a href="" class="btn btn-secondary">❌</a></li> --> 
+            </ul>
+        </div>
+    </section>
+    
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script> -->
+    <script src="app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+</body>
+</html>
